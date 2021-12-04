@@ -35,5 +35,6 @@ console.log('Elements:', productsEL.length);
 
 console.log('Category:', productsEL[2].textContent);
 
-const elementsProdEL = document.querySelectorAll('ul');
-console.log('Elements:',elementsProdEL.length)
+const elementsProdEL = document.querySelectorAll('ul.li');
+console.log('Elements:', elementsProdEL)
+

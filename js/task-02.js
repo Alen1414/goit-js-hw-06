@@ -28,3 +28,25 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+console.log(ingredients)
+
+const elements = ingredients.map((number) => {
+  const ingredientsEl = document.createElement('li');
+
+  ingredientsEl.textContent = number;
+  ingredientsEl.classList.add = ('item');
+  return ingredientsEl;
+});
+
+const ingredientId = document.querySelector('#ingredients');
+
+ingredientId.append(...elements);
+
+
+
+
+
+
+
+
+

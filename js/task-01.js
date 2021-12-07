@@ -35,6 +35,6 @@ console.log('Elements:', productsEL.length);
 
 console.log('Category:', productsEL[2].textContent);
 
-const elementsProdEL = document.querySelectorAll('ul.li');
+const elementsProdEL = numberEL.Children;
 console.log('Elements:', elementsProdEL)
 

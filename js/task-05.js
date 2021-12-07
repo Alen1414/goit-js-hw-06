@@ -9,10 +9,11 @@
 const inputEl = document.querySelector('#name-input');
 const outputEl = document.querySelector('#name-output');
 
-// console.log(inputEl.textContent);
-// inputEl.textContent = 'Anonymous';
 
+inputEl.textContent = 'Anonymous';
 inputEl.addEventListener("input", (event) => {
+    console.log(inputEl.textContent);
     outputEl.textContent = event.currentTarget.value;
   
+
 });

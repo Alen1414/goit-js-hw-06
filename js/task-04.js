@@ -23,13 +23,13 @@ const clickPluss = ()=> {
     counterValue = counterValue + 1;
     console.log(counterValue);
 };
-const clickManus = () => {
+const clickMinus = () => {
     counterValue = counterValue -1;
     console.log(counterValue);
 };
 
 
-manusValue.addEventListener('click', () => clickManus(-1));
+manusValue.addEventListener('click', () => clickMinus(-1));
 plussValue.addEventListener('click', () => clickPluss(+1));
 
 

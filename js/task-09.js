@@ -10,10 +10,22 @@
 // </div>
 // Для генерации случайного цвета используй функцию getRandomHexColor.
 
-// function getRandomHexColor() {
-//   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-// }
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  
 }
+
+
+const color = document.querySelector('.change-color');
+const spanEl = document.querySelector('.color');
+
+function  onChancheColor (){
+  document.body.style.backgroundColor = getRandomHexColor();
+  spanEl.textContent = getRandomHexColor()
+};
+
+
+
+color.addEventListener('click', onChancheColor );
+// spanEl.addEventListener('input', textSpan);

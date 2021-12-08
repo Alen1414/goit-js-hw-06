@@ -35,6 +35,7 @@ console.log('Elements:', productsEL.length);
 
 console.log('Category:', productsEL[2].textContent);
 
-const elementsProdEL = numberEL.Children;
-console.log('Elements:', elementsProdEL)
+
+const elementsProdEL = productsEL.lastChild;
+console.log('Elements:',elementsProdEL)
 

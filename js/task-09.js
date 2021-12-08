@@ -28,4 +28,3 @@ function  onChancheColor (){
 
 
 color.addEventListener('click', onChancheColor );
-// spanEl.addEventListener('input', textSpan);

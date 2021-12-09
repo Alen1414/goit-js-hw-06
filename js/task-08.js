@@ -35,6 +35,7 @@ function onFormSubmit(event) {
         mail,
         password,
     };
+    console.log(formData)
      if (!mail || !password) return alert('все поля должны быть заполнены!') 
     }
     

@@ -31,5 +31,3 @@ list.insertAdjacentHTML('afterbegin', elements);
 
 
 const ingredientId = document.querySelector('.gallery');
-
-ingredientId.append(...elements);

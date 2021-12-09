@@ -16,26 +16,31 @@
 // Elements: 5
 
 
+// const numberEL = document.querySelectorAll('li.item');
+// console.log(' Number of categories:',numberEL.length);
+
+// const categoryEL = document.querySelector('h2');
+// console.log('Category:', categoryEL.textContent);
+
+// const elementsEL = document.querySelectorAll('ul');
+// console.log('Elements:', elementsEL.length);
+
+
+
+
+// const productsEL = document.querySelectorAll('h2');
+
+// console.log('Category:', productsEL[1].textContent);
+// console.log('Elements:', productsEL.length);
+
+// console.log('Category:', productsEL[2].textContent);
+
+
+// const elementsProdEL = productsEL.lastChild;
+// console.log('Elements:',elementsProdEL)
+
 const numberEL = document.querySelectorAll('li.item');
-console.log(' Number of categories:',numberEL.length);
-
-const categoryEL = document.querySelector('h2');
-console.log('Category:', categoryEL.textContent);
-
-const elementsEL = document.querySelectorAll('ul');
-console.log('Elements:', elementsEL.length);
-
-
-
-
-const productsEL = document.querySelectorAll('h2');
-
-console.log('Category:', productsEL[1].textContent);
-console.log('Elements:', productsEL.length);
-
-console.log('Category:', productsEL[2].textContent);
-
-
-const elementsProdEL = productsEL.lastChild;
-console.log('Elements:',elementsProdEL)
-
+ 
+numberEL.addEventListener(() {
+    
+})

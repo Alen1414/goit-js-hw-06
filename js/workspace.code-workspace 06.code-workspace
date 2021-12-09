@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../../src/js"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "goit-js-hw-06",
+    "liveServer.settings.port": 5501
+  }
+}

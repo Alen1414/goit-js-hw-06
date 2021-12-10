@@ -16,31 +16,16 @@
 // Elements: 5
 
 
-// const numberEL = document.querySelectorAll('li.item');
-// console.log(' Number of categories:',numberEL.length);
 
-// const categoryEL = document.querySelector('h2');
-// console.log('Category:', categoryEL.textContent);
+const list = document.querySelectorAll('li.item');
 
-// const elementsEL = document.querySelectorAll('ul');
-// console.log('Elements:', elementsEL.length);
+console.log(`В списке ${list.length} категории.`);
 
+const ul = document.querySelectorAll('#categories>li');
+ul.forEach(el => {
 
-
-
-// const productsEL = document.querySelectorAll('h2');
-
-// console.log('Category:', productsEL[1].textContent);
-// console.log('Elements:', productsEL.length);
-
-// console.log('Category:', productsEL[2].textContent);
-
-
-// const elementsProdEL = productsEL.lastChild;
-// console.log('Elements:',elementsProdEL)
-
-const numberEL = document.querySelectorAll('li.item');
- 
-numberEL.addEventListener(() {
-    
-})
+  console.log(
+      `Категория: ${el.firstElementChild.textContent}, 
+    Количество элементов: ${el.lastElementChild.children.length}`,
+  );
+});

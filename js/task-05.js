@@ -11,12 +11,11 @@ const outputEl = document.querySelector('#name-output');
 console.log(inputEl)
 
 // inputEl.textContent = 'Anonymous';
-inputEl.addEventListener("input", (event) => {
+inputEl.addEventListener("input", onInput);
 
-    outputEl.textContent = event.currentTarget.value;
+function onInput (event)  {
+  const value = event.target.value.trim();
 
-    if (inputEl === ' ') {
-  return outputEl.textContent = 'Anonymous';
-  }
-
-});
+if (!value) return (outputEl.textContent = 'Anonymous');
+return (outputEl.textContent = value);
+};

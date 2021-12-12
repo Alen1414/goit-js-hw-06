@@ -15,17 +15,18 @@
 let counterValue = 0;
 const plussValue =  document.querySelector('[data-action="increment"]');
 const manusValue = document.querySelector('[data-action="decrement"]');
-
-
+const value = document.querySelector('#value');
 
 
 const clickPluss = ()=> {
     counterValue = counterValue + 1;
     console.log(counterValue);
+    value.textContent = counterValue;
 };
 const clickMinus = () => {
     counterValue = counterValue -1;
     console.log(counterValue);
+    value.textContent = counterValue;
 };
 
 

@@ -26,9 +26,14 @@
 
 
 const inputEl = document.getElementById('validation-input');
-
+console.log(inputEl )
+const colorEl = inputEl.getAttribute('data-length');
+console.log(colorEl)
 const lengthInputEl = inputEl.dataset.length;
+const placeholderEl = document.getAttribute('[input. placeholder]');
+console.log(placeholderEl)
 
+console.log(lengthInputEl )
 
 
 inputEl.addEventListener('blur', onBlurInput);
@@ -37,7 +42,7 @@ inputEl.addEventListener('blur', onBlurInput);
 
 
 function onBlurInput(event) {
-   if(inputEl.getAttribute('data-length') === lengthInputEl){
+   if( inputEl <= lengthInputEl){
       event.currentTarget.classList.remove('invalid');
       event.currentTarget.classList.add('valid');
    } else {

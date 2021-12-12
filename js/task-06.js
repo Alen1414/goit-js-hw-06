@@ -24,32 +24,20 @@
 // }
 
 
+let inputEl = document.querySelector('#validation-input');
 
-const inputEl = document.getElementById('validation-input');
-console.log(inputEl )
-const colorEl = inputEl.getAttribute('data-length');
-console.log(colorEl)
-const lengthInputEl = inputEl.dataset.length;
-const placeholderEl = document.getAttribute('[input. placeholder]');
-console.log(placeholderEl)
+let inputLength = inputEl.dataset.length;
 
-console.log(lengthInputEl )
+const input = document.querySelector('input');
 
+inputEl.addEventListener('change', e => {
+  const text = e.target.value;
 
-inputEl.addEventListener('blur', onBlurInput);
-
-
-
-
-function onBlurInput(event) {
-   if( inputEl <= lengthInputEl){
-      event.currentTarget.classList.remove('invalid');
-      event.currentTarget.classList.add('valid');
-   } else {
-      event.currentTarget.classList.remove('valid');
-      event.currentTarget.classList.add('invalid');
-   }
-};
-
-
-
+  if (text.length === +inputLength) {
+    inputEl.classList.add('valid');
+    inputEl.classList.remove('invalid');
+  } else {
+    inputEl.classList.remove('valid');
+    inputEl.classList.add('invalid');
+  }
+});
